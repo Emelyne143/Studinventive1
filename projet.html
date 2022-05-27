@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="style.css" />
+	<title>Agenceco</title>
+</head>
+
+<body>
+
+	<!-- En-tête image et bannière -->
+
+	<header>
+		<div id="bloc_page">
+			<div class="header">
+				<p id="agenc">Agenc<span id="eco">eco</span></p>
+				<nav>
+					<ul id="menu">
+						<li><a href="#">Accueil</a></li>
+						<li><a href="#">Notre équipe</a></li>
+						<li><a href="#">Nos services</a></li>
+						<li><a href="#">Témoignages</a></li>
+						<li><a href="#">Contactez-nous</a></li>
+						<li><a href="#">Notre galerie</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div id="banner">
+				<div id="slogan">
+					<p id="debut_slogan">Bienvenue dans votre</p>
+					<p id="fin_slogan">agence web écologique</p>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Section équipe -->
+
+	<section id="equipe">
+		<h2>Notre équipe</h2>
+		<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+			ut labore et dolore magna aliqua.</p>
+
+		<div class="profil">
+			<div class="profil_e">
+				<img src="julie.jpg" alt="Julie Dupond" class="profil_img" />
+				<h3>Julie Dupond</h3>
+				<p class="text_profil">Excepteur sint occaecat cupidatat non proident</p>
+			</div>
+
+			<div class="profil_e">
+				<img src="romeo.jpg" alt="Romeo Sylla" class="profil_img" />
+				<h3>Romeo Sylla</h3>
+				<p class="text_profil">Excepteur sint occaecat cupidatat non proident</p>
+			</div>
+
+			<div class="profil_e">
+				<img src="javier.jpg" alt="Javier Bardem" class="profil_img" />
+				<h3>Javier Bardem</h3>
+				<p class="text_profil">Excepteur sint occaecat cupidatat non proident</p>
+			</div>
+		</div>
+
+	</section>
+
+	<!-- Section satisfaction clients -->
+
+	<section class="satisfaction row justify-content-center">
+		<div class="col-3">
+			<h2>2500</h2>
+			<p>Clients satisfaits</p>
+		</div>
+		<div class="col-3">
+			<h2>2500</h2>
+			<p>Clients satisfaits</p>
+		</div>
+		<div class="col-3">
+			<h2>2500</h2>
+			<p>Clients satisfaits</p>
+		</div>
+		<div class="col-3">
+			<h2>2500</h2>
+			<p>Clients satisfaits</p>
+		</div>
+	</section>
+
+	<!-- Section Notre service -->
+
+	<section id="service">
+		<h2>Notre service</h2>
+		<div class="container bloc-service">
+			<div class="row justify-content-center">
+				<div class="col-6">
+					<div class="bg-gray rounded pt-5">
+						<img src="web.jpg" alt="" />
+					</div>
+					<p>Création de sites web</p>
+				</div>
+				<div class="col-6">
+					<div class="bg-gray rounded pt-5">
+						<img src="audit.jpg" alt="" />
+					</div>
+					<p>Audit qualité</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Section contactez-nous -->
+
+	<section class="contact">
+		<h2>Contactez-nous</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+		<form method="post" action="traitement.php" class="formulaire">
+			<div class="box-form">
+				<div class="col-6">
+					<label for="nom">Nom</label><br />
+					<input type="text" name="nom" id="nom" />
+				</div>
+				<div class="col-6">
+					<label for="categorie">Catégorie</label><br />
+					<input type="text" name="categorie" id="categorie" />
+				</div>
+				<div class="col-6">
+					<label for="telephone">Téléphone</label><br />
+					<input type="tel" name="telephone" id="telephone" />
+				</div>
+				<div class="col-6">
+					<label for="ville">Ville</label><br />
+					<input type="text" name="ville" id="ville" />
+				</div>
+				<div class="col-12">
+					<label for="email">Email</label><br />
+					<input type="email" name="email" id="email" />
+				</div>
+				<div class="col-12">
+					<label for="message">Message</label><br />
+					<textarea name="message" id="message"></textarea>
+				</div>
+			</div>
+			<input type="submit" value="Envoyer" class="bouton" />
+		</form>
+
+	</section>
+
+	<!-- Section A propos -->
+
+	<section class="sapropos">
+		<div class="col-6">
+			<img src="reunion.jpg" alt="" class="imgapropos" />
+		</div>
+
+		<div class="col-6">
+			<div class="apropos">
+				<h1>A propos de nous</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+				dolore magna aliqua.</p>
+
+				<div class="tlogoap">
+					<div class="logoapi">
+						<img src="ecologique.jpg" alt="" class="logoap" />
+						<p>Ecologique</p>
+					</div>
+
+					<div class="logoapi">
+						<img src="responsable.jpg" alt="" class="logoap" />
+						<p>Responsable</p>
+					</div>
+
+					<div class="logoapi">
+						<img src="assistance.jpg" alt="" class="logoap" />
+						<p>24/7 Assistance</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Section Notre galerie -->
+
+	<section>
+		<h2>Notre galerie</h2>
+		<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+			ut labore et dolore magna aliqua.</p>
+		<div class="galeriecont">
+			<img src="bureau.jpg" alt="" class="galerie" />
+		</div>
+	</section>
+
+	<!-- Section pied de page -->
+
+	<footer>
+		<div class="footer1">
+			<div class="infofooter">
+				<h3>Content</h3>
+				<a href="#">consecteur</a>
+				<br />
+				<a href="#">consecteur</a>
+			</div>
+			<div class="infofooter">
+				<h3>Informations</h3>
+				<a href="#">consecteur</a>
+				<br />
+				<a href="#">consecteur</a>
+			</div>
+			<div class="infofooter">
+				<h3>Services</h3>
+				<a href="#">consecteur</a>
+				<br />
+				<a href="#">consecteur</a>
+			</div>
+			<div class="infofooter">
+				<h3>Aide</h3>
+				<a href="#">consecteur</a>
+				<br />
+				<a href="#">consecteur</a>
+			</div>
+			<div class="infofooter">
+				<div class="align">
+					<div class="align1">
+						<div><img src="telephone.png" alt="" /></div>
+						<div><img src="position.png" alt="" /></div>
+					</div>
+					<div class="align2">
+						<p>+33 00 00 00 00 00</p>
+						<p>+33 00 00 00 00 00</p>
+						<p class="adresse">75001 Paris France</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer2">
+			<p>Copyright © 2021 AGENCECO - All rights reserved</p>
+			<div class="imgfooter2b">
+				<img src="facebook.png" alt="" class="imgfooter2" />
+				<img src="twitter.png" alt="" class="imgfooter2" />
+				<img src="instagram.png" alt="" class="imgfooter2" />
+			</div>
+		</div>
+	</footer>
+
+	</div>
+</body>
+
+</html>
