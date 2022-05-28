@@ -170,6 +170,15 @@ header{
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
+.pt-3{
+	padding-top: 30px;
+}
+.pl{
+	padding-left: 20px;
+}
+.pr{
+	padding-right: 20px;
+}
 
 .bloc-service img{
 	height: 110px;
@@ -209,9 +218,9 @@ input, textarea{
 	border-top: hidden;
 	border-left: hidden;
 	border-right: hidden;
-	border-bottom: 1px solid white;
+	border-bottom: 3px solid white;
 	background-color: #053B44;
-	width: 50%;
+	width: 100%;
 }
 
 .textarea{
@@ -225,6 +234,10 @@ input, textarea{
 	padding-top: 8px;
 	padding-bottom: 8px;
 	margin-top: 8px;
+}
+.btn-control{
+	text-align: right;
+	justify-content: right;
 }
 
 /* Section A propos */
@@ -276,10 +289,13 @@ input, textarea{
 }
 
 .logoap{
-	width: 70px;
-	height: 70px;
+	width: 45px;
+	height: 45px;
 	border-radius: 50%;
 	border: 3px solid #053B44;
+	object-fit: contain;
+	object-position: center;
+	padding: 10px;
 }
 
 /* Section Notre galerie */
@@ -379,3 +395,14 @@ footer p{
 	object-position: center;
 }
 
+/* Responsive */
+
+@media all and (max-width: 1024px)
+{
+	.row, .profil{
+		flex-direction: column !important;
+	}
+	.col-sm-12{
+		width: 100%;
+	}
+}
