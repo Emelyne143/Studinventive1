@@ -14,25 +14,25 @@
 		<!-- En-tête image et bannière -->
 
 		<header>
-			<div id="bloc_page">
-				<div class="header">
+			<div class="header">
+				<div class="logo">
 					<p id="agenc">Agenc<span id="eco">eco</span></p>
-					<nav>
-						<ul id="menu">
-							<li><a href="#">Accueil</a></li>
-							<li><a href="#">Notre équipe</a></li>
-							<li><a href="#">Nos services</a></li>
-							<li><a href="#">Témoignages</a></li>
-							<li><a href="#">Contactez-nous</a></li>
-							<li><a href="#">Notre galerie</a></li>
-						</ul>
-					</nav>
-				</div>
-				<div id="banner">
-					<div id="slogan">
-						<p id="debut_slogan">Bienvenue dans votre</p>
-						<p id="fin_slogan">agence web écologique</p>
-					</div>
+				</div>	
+				<input class="menu-btn" type="checkbox" id="menu-btn" />
+				<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+				<ul class="menu">
+					<li><a href="#">Accueil</a></li>
+					<li><a href="#">Notre équipe</a></li>
+					<li><a href="#">Nos services</a></li>
+					<li><a href="#">Témoignages</a></li>
+					<li><a href="#">Contactez-nous</a></li>
+					<li><a href="#">Notre galerie</a></li>
+				</ul>
+			</div>
+			<div id="banner">
+				<div id="slogan">
+					<p id="debut_slogan">Bienvenue dans votre</p>
+					<p id="fin_slogan">agence web écologique</p>
 				</div>
 			</div>
 		</header>
@@ -119,21 +119,21 @@
 
 				<form method="post" action="traitement.php" class="formulaire">
 					<div class="row">
-						<div class="col-6 pr">
+						<div class="col-6 pr col-sm-12">
 							<label for="nom">Nom</label><br />
 							<input type="text" name="nom" id="nom" />
 						</div>
-						<div class="col-6 pl">
+						<div class="col-6 pl col-sm-12">
 							<label for="categorie">Catégorie</label><br />
 							<input type="text" name="categorie" id="categorie" />
 						</div>
 					</div>
 					<div class="row pt-3">
-						<div class="col-6 pr">
+						<div class="col-6 pr col-sm-12">
 							<label for="telephone">Téléphone</label><br />
 							<input type="tel" name="telephone" id="telephone" />
 						</div>
-						<div class="col-6 pl">
+						<div class="col-6 pl col-sm-12">
 							<label for="ville">Ville</label><br />
 							<input type="text" name="ville" id="ville" />
 						</div>
@@ -145,7 +145,7 @@
 						</div>
 						<div class="col-12 pt-3">
 							<label for="message">Message</label><br />
-							<textarea name="message" id="message" rows="6"></textarea>
+							<textarea name="message" id="message" rows="12"></textarea>
 						</div>
 					</div>
 					<div class="btn-control">
@@ -158,47 +158,69 @@
 
 	<!-- Section A propos -->
 
-	<section class="sapropos">
-		<div class="col-6">
+	<section class="sapropos container">
+	<div class="row justify-content-center">
+		<div class="col-6 col-sm-12">
 			<img src="reunion.jpg" alt="" class="imgapropos" />
 		</div>
 
-		<div class="col-6">
-			<div class="apropos">
+		<div class="col-6 col-sm-12">
+			<div class="container2">
+				<div class="apropos">
 				<h1>A propos de nous</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-					et
-					dolore magna aliqua.</p>
-
+					et dolore magna aliqua.</p>
+				
 				<div class="tlogoap">
 					<div class="logoapi">
-						<img src="ecologique.jpg" alt="" class="logoap" />
+						<div class="blogoap">
+							<img src="ecologique.jpg" alt="" class="logoap" />
+						</div>
 						<p>Ecologique</p>
 					</div>
 
 					<div class="logoapi">
-						<img src="responsable.jpg" alt="" class="logoap" />
+						<div class="blogoap">
+							<img src="responsable.jpg" alt="" class="logoap" />
+						</div>
 						<p>Responsable</p>
 					</div>
 
 					<div class="logoapi">
-						<img src="assistance.jpg" alt="" class="logoap" />
+						<div class="blogoap">
+							<img src="assistance.jpg" alt="" class="logoap" />
+						</div>
 						<p>24/7 Assistance</p>
 					</div>
 				</div>
+				</div>
 			</div>
 		</div>
+	</div>	
 	</section>
 
 	<!-- Section Notre galerie -->
 
-	<section>
+	<section class="galerie">
 		<h2>Notre galerie</h2>
 		<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
 			ut labore et dolore magna aliqua.</p>
-		<div class="galeriecont">
-			<img src="bureau.jpg" alt="" class="galerie" />
-		</div>
+			<div class="slider">
+				<div class="slides">
+				  <div class="slide">
+					<img src="bureau.jpg" />
+				  </div>
+				  <div class="slide">
+					<img src="bureau1.jpg" />
+				  </div>
+				  <div class="slide">
+					<img src="bureau2.jpg" />
+				  </div>
+				  <div class="slide">
+					<img src="bureau3.jpg" />
+				  </div>
+				</div>
+			  </div>
 	</section>
 
 	<!-- Section pied de page -->
@@ -232,13 +254,15 @@
 			<div class="infofooter">
 				<div class="align">
 					<div class="align1">
-						<div><img src="telephone.png" alt="" /></div>
-						<div><img src="position.png" alt="" /></div>
+						<div><img src="telephone.png" alt="" class="align3" /></div>
+						<div>
+							<p>+33 00 00 00 00 00</p>
+							<p>+33 00 00 00 00 00</p>
+						</div>
 					</div>
-					<div class="align2">
-						<p>+33 00 00 00 00 00</p>
-						<p>+33 00 00 00 00 00</p>
-						<p class="adresse">75001 Paris France</p>
+					<div class="align1 col-sm-6">
+						<div><img src="position.png" alt="" class="align3" /></div>
+						<p>75001 Paris France</p>
 					</div>
 				</div>
 			</div>
